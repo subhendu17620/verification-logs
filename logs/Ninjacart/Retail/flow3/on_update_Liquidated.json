@@ -1,0 +1,161 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "ondc-seller-api.trafyn.site",
+      "bpp_uri": "https://ondc-seller-api.trafyn.site/",
+      "transaction_id": "29981eeb-cc91-4afe-b0ae-21d0a745f25c",
+      "message_id": "e02cbcb7-9d9f-4d2f-a62e-a63342604462",
+      "timestamp": "2023-07-27T05:51:04.619Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-07-27-783478",
+        "state": "Completed",
+        "items": [
+          {
+            "id": "019d9dc2-9d3f-48cb-a896-29ad5430e301",
+            "fulfillment_id": "4c7ea44f-2c05-407e-81b1-b7b2bd4e6419",
+            "quantity": {
+              "count": 2
+            },
+            "tags": {
+              "status": "Liquidated"
+            }
+          },
+          {
+            "id": "43ec1346-4b23-4630-8720-fd6d75fff469",
+            "fulfillment_id": "4c7ea44f-2c05-407e-81b1-b7b2bd4e6419",
+            "quantity": {
+              "count": 2
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "121.0"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "019d9dc2-9d3f-48cb-a896-29ad5430e301",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "@ondc/org/title_type": "item",
+              "title": "Spring onion",
+              "price": {
+                "currency": "INR",
+                "value": "40.0",
+                "maximum_value": "50.0"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "20.0"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "2"
+                  },
+                  "maximum": {
+                    "count": "2"
+                  }
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "019d9dc2-9d3f-48cb-a896-29ad5430e301",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "Onion - Graded (Local)",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "50.0",
+                "maximum_value": "60.0"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "25.0"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "2"
+                  },
+                  "maximum": {
+                    "count": "2"
+                  }
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "4c7ea44f-2c05-407e-81b1-b7b2bd4e6419",
+              "@ondc/org/item_quantity": null,
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "1.00"
+              },
+              "item": null
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "4c7ea44f-2c05-407e-81b1-b7b2bd4e6419",
+            "type": "Delivery",
+            "tracking": false,
+            "state": {
+              "descriptor": {
+                "name": "Order delivered",
+                "code": "Order-delivered"
+              }
+            },
+            "start": {
+              "location": {
+                "descriptor": {
+                  "name": "LoadShare Delivery"
+                },
+                "gps": "13.041014,77.596686"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-07-27T17:17:07.480Z",
+                  "end": "2023-07-27T17:32:07.480Z"
+                },
+                "timestamp": "2023-07-27T17:22:24.203Z"
+              },
+              "contact": {
+                "phone": "7760246669",
+                "email": "psriram78@yahoo.com"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "13.041014,77.596686"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-07-27T17:47:07.480Z",
+                  "end": "2023-07-27T18:02:07.480Z"
+                }
+              },
+              "contact": {
+                "phone": "9966775535"
+              }
+            }
+          }
+        ]
+      }
+    }
+}
